@@ -1,0 +1,29 @@
+# Local / production secrets — never commit
+includes/config.local.php
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/*.log
+logs/*.txt
+
+# Uploaded user content
+uploads/avatars/*
+uploads/images/*
+uploads/files/*
+uploads/voices/*
+uploads/groups/*
+!uploads/**/.htaccess
+!uploads/**/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.code-workspace
+
+# Composer / vendor (if added later)
+/vendor/

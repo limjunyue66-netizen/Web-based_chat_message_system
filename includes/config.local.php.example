@@ -1,0 +1,27 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * Optional local/production overrides.
+ * Copy this file to config.local.php and edit the values.
+ * Do not commit real production passwords.
+ */
+define('DB_HOST', '127.0.0.1');
+define('DB_NAME', 'webconnect');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('APP_URL', 'http://localhost/Web-based_chat_message_system');
+
+/**
+ * Add a TURN server when voice or video calls cannot connect
+ * across strict networks:
+ *
+ * define('RTC_ICE_SERVERS', json_encode([
+ *     ['urls' => 'stun:stun.l.google.com:19302'],
+ *     [
+ *         'urls' => 'turn:turn.example.com:3478',
+ *         'username' => 'turn-user',
+ *         'credential' => 'turn-password',
+ *     ],
+ * ]));
+ */
